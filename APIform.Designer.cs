@@ -76,6 +76,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabSalesOrder = new System.Windows.Forms.TabPage();
+            this.btnSalesOrderCancel = new System.Windows.Forms.Button();
             this.btnCreateSalesOrder = new System.Windows.Forms.Button();
             this.dateTimeSOShipDate = new System.Windows.Forms.DateTimePicker();
             this.dateTimeSOOrderDate = new System.Windows.Forms.DateTimePicker();
@@ -169,23 +170,18 @@
             this.textSOCustomerNumber = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.lblAPIReturnCode = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textAPIKey = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnGetJSONTransactions = new System.Windows.Forms.Button();
-            this.txtTransactions = new System.Windows.Forms.RichTextBox();
-            this.textNumOfTrans = new System.Windows.Forms.TextBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSalesOrderCancel = new System.Windows.Forms.Button();
             this.tabPurchaseOrder = new System.Windows.Forms.TabPage();
-            this.tabReturnOrder = new System.Windows.Forms.TabPage();
+            this.btnPurchaseOrderFinished = new System.Windows.Forms.Button();
             this.btnCreatePurchaseOrder = new System.Windows.Forms.Button();
             this.dateTimePickerPOETA = new System.Windows.Forms.DateTimePicker();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtPOLQTY = new System.Windows.Forms.TextBox();
+            this.dateTimePickerPOLETA = new System.Windows.Forms.DateTimePicker();
             this.label73 = new System.Windows.Forms.Label();
+            this.txtPOLDescription = new System.Windows.Forms.TextBox();
+            this.txtPOLERPStore = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
             this.txtPOLVariant2 = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.txtPOLVariant1 = new System.Windows.Forms.TextBox();
@@ -195,6 +191,7 @@
             this.txtPOLOrderLine = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
             this.chkPOAllowCrossDock = new System.Windows.Forms.CheckBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
@@ -234,13 +231,28 @@
             this.txtPOAddress1 = new System.Windows.Forms.TextBox();
             this.txtPOSupplierNumber = new System.Windows.Forms.TextBox();
             this.label112 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.dateTimePickerPOLETA = new System.Windows.Forms.DateTimePicker();
-            this.label82 = new System.Windows.Forms.Label();
-            this.txtPOLERPStore = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.txtPOLDescription = new System.Windows.Forms.TextBox();
-            this.btnPurchaseOrderFinished = new System.Windows.Forms.Button();
+            this.tabReturnOrder = new System.Windows.Forms.TabPage();
+            this.btnReturnOrderCreate = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtROLReturnDescription = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.txtROLCustomsReference = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.txtROLExtReference = new System.Windows.Forms.TextBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.txtROLQTY = new System.Windows.Forms.TextBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.txtROLVariant2 = new System.Windows.Forms.TextBox();
+            this.label98 = new System.Windows.Forms.Label();
+            this.txtROLVariant1 = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
+            this.txtROLOrgLine = new System.Windows.Forms.TextBox();
+            this.label114 = new System.Windows.Forms.Label();
+            this.txtROLPartNumber = new System.Windows.Forms.TextBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.txtROLLine = new System.Windows.Forms.TextBox();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
             this.dateTimePickerROReturnDate = new System.Windows.Forms.DateTimePicker();
             this.label86 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
@@ -253,27 +265,40 @@
             this.txtROOrderType = new System.Windows.Forms.TextBox();
             this.label103 = new System.Windows.Forms.Label();
             this.txtROCustomerNumber = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtROLQTY = new System.Windows.Forms.TextBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.txtROLVariant2 = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
-            this.txtROLVariant1 = new System.Windows.Forms.TextBox();
-            this.label100 = new System.Windows.Forms.Label();
-            this.txtROLPartNumber = new System.Windows.Forms.TextBox();
-            this.label110 = new System.Windows.Forms.Label();
-            this.txtROLLine = new System.Windows.Forms.TextBox();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.btnReturnOrderCreate = new System.Windows.Forms.Button();
-            this.label114 = new System.Windows.Forms.Label();
-            this.txtROLOrgLine = new System.Windows.Forms.TextBox();
-            this.label115 = new System.Windows.Forms.Label();
-            this.txtROLExtReference = new System.Windows.Forms.TextBox();
-            this.label116 = new System.Windows.Forms.Label();
-            this.txtROLCustomsReference = new System.Windows.Forms.TextBox();
-            this.label117 = new System.Windows.Forms.Label();
-            this.txtROLReturnDescription = new System.Windows.Forms.TextBox();
+            this.lblAPIReturnCode = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textAPIKey = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnGetJSONTransactions = new System.Windows.Forms.Button();
+            this.txtTransactions = new System.Windows.Forms.RichTextBox();
+            this.textNumOfTrans = new System.Windows.Forms.TextBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.label118 = new System.Windows.Forms.Label();
+            this.txtURL = new System.Windows.Forms.TextBox();
+            this.txtVATNumber = new System.Windows.Forms.TextBox();
+            this.label119 = new System.Windows.Forms.Label();
+            this.txtCustomerVATNumber = new System.Windows.Forms.TextBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.txtInvoiceNumber = new System.Windows.Forms.TextBox();
+            this.label121 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.txtCurrencyShortName = new System.Windows.Forms.TextBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.txtFreightCosts = new System.Windows.Forms.TextBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.label126 = new System.Windows.Forms.Label();
+            this.chkPrintInvoice = new System.Windows.Forms.CheckBox();
+            this.dateTimeInvoiceDate = new System.Windows.Forms.DateTimePicker();
+            this.chkInsurance = new System.Windows.Forms.CheckBox();
+            this.txtMiscCharges = new System.Windows.Forms.TextBox();
+            this.label127 = new System.Windows.Forms.Label();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
+            this.label128 = new System.Windows.Forms.Label();
+            this.txtOther_Fee = new System.Windows.Forms.TextBox();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabProduct.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -282,8 +307,8 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabPurchaseOrder.SuspendLayout();
-            this.tabReturnOrder.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.tabReturnOrder.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -394,6 +419,7 @@
             this.textBarcode.Name = "textBarcode";
             this.textBarcode.Size = new System.Drawing.Size(126, 20);
             this.textBarcode.TabIndex = 20;
+            this.textBarcode.Text = "1111";
             // 
             // panel1
             // 
@@ -632,7 +658,6 @@
             this.label22.Size = new System.Drawing.Size(70, 13);
             this.label22.TabIndex = 0;
             this.label22.Text = "OriginCountry";
-            
             // 
             // label21
             // 
@@ -674,6 +699,7 @@
             this.textDescription.Name = "textDescription";
             this.textDescription.Size = new System.Drawing.Size(126, 20);
             this.textDescription.TabIndex = 3;
+            this.textDescription.Text = "Test product";
             // 
             // label18
             // 
@@ -690,6 +716,7 @@
             this.textPartNumber.Name = "textPartNumber";
             this.textPartNumber.Size = new System.Drawing.Size(126, 20);
             this.textPartNumber.TabIndex = 1;
+            this.textPartNumber.Text = "1111";
             // 
             // label17
             // 
@@ -735,9 +762,12 @@
             this.tabSalesOrder.Controls.Add(this.btnSalesOrderCancel);
             this.tabSalesOrder.Controls.Add(this.btnCreateSalesOrder);
             this.tabSalesOrder.Controls.Add(this.dateTimeSOShipDate);
+            this.tabSalesOrder.Controls.Add(this.dateTimeInvoiceDate);
             this.tabSalesOrder.Controls.Add(this.dateTimeSOOrderDate);
             this.tabSalesOrder.Controls.Add(this.panel4);
             this.tabSalesOrder.Controls.Add(this.panel3);
+            this.tabSalesOrder.Controls.Add(this.chkInsurance);
+            this.tabSalesOrder.Controls.Add(this.chkPrintInvoice);
             this.tabSalesOrder.Controls.Add(this.chkUrgent);
             this.tabSalesOrder.Controls.Add(this.label33);
             this.tabSalesOrder.Controls.Add(this.label34);
@@ -764,7 +794,19 @@
             this.tabSalesOrder.Controls.Add(this.label42);
             this.tabSalesOrder.Controls.Add(this.label50);
             this.tabSalesOrder.Controls.Add(this.label29);
+            this.tabSalesOrder.Controls.Add(this.label126);
+            this.tabSalesOrder.Controls.Add(this.label129);
+            this.tabSalesOrder.Controls.Add(this.label128);
+            this.tabSalesOrder.Controls.Add(this.label127);
+            this.tabSalesOrder.Controls.Add(this.label125);
+            this.tabSalesOrder.Controls.Add(this.label124);
+            this.tabSalesOrder.Controls.Add(this.label123);
+            this.tabSalesOrder.Controls.Add(this.label122);
+            this.tabSalesOrder.Controls.Add(this.label121);
+            this.tabSalesOrder.Controls.Add(this.label120);
+            this.tabSalesOrder.Controls.Add(this.label119);
             this.tabSalesOrder.Controls.Add(this.label41);
+            this.tabSalesOrder.Controls.Add(this.label130);
             this.tabSalesOrder.Controls.Add(this.label52);
             this.tabSalesOrder.Controls.Add(this.label51);
             this.tabSalesOrder.Controls.Add(this.label31);
@@ -802,6 +844,14 @@
             this.tabSalesOrder.Controls.Add(this.textSOCustomerAddress1);
             this.tabSalesOrder.Controls.Add(this.textSOName);
             this.tabSalesOrder.Controls.Add(this.textSOAddress1);
+            this.tabSalesOrder.Controls.Add(this.txtOther_Fee);
+            this.tabSalesOrder.Controls.Add(this.txtDiscount);
+            this.tabSalesOrder.Controls.Add(this.txtMiscCharges);
+            this.tabSalesOrder.Controls.Add(this.txtFreightCosts);
+            this.tabSalesOrder.Controls.Add(this.txtCurrencyShortName);
+            this.tabSalesOrder.Controls.Add(this.txtInvoiceNumber);
+            this.tabSalesOrder.Controls.Add(this.txtCustomerVATNumber);
+            this.tabSalesOrder.Controls.Add(this.txtVATNumber);
             this.tabSalesOrder.Controls.Add(this.textSOCustomerName);
             this.tabSalesOrder.Controls.Add(this.textSOCustomerNumber);
             this.tabSalesOrder.Controls.Add(this.label27);
@@ -814,11 +864,21 @@
             this.tabSalesOrder.Text = "SalesOrder";
             this.tabSalesOrder.UseVisualStyleBackColor = true;
             // 
+            // btnSalesOrderCancel
+            // 
+            this.btnSalesOrderCancel.Location = new System.Drawing.Point(1354, 297);
+            this.btnSalesOrderCancel.Name = "btnSalesOrderCancel";
+            this.btnSalesOrderCancel.Size = new System.Drawing.Size(164, 31);
+            this.btnSalesOrderCancel.TabIndex = 34;
+            this.btnSalesOrderCancel.Text = "Cancel SalesOrder";
+            this.btnSalesOrderCancel.UseVisualStyleBackColor = true;
+            this.btnSalesOrderCancel.Click += new System.EventHandler(this.btnSalesOrderCancel_Click);
+            // 
             // btnCreateSalesOrder
             // 
-            this.btnCreateSalesOrder.Location = new System.Drawing.Point(862, 277);
+            this.btnCreateSalesOrder.Location = new System.Drawing.Point(1354, 257);
             this.btnCreateSalesOrder.Name = "btnCreateSalesOrder";
-            this.btnCreateSalesOrder.Size = new System.Drawing.Size(183, 31);
+            this.btnCreateSalesOrder.Size = new System.Drawing.Size(164, 31);
             this.btnCreateSalesOrder.TabIndex = 33;
             this.btnCreateSalesOrder.Text = "CreateSalesOrder";
             this.btnCreateSalesOrder.UseVisualStyleBackColor = true;
@@ -826,17 +886,19 @@
             // 
             // dateTimeSOShipDate
             // 
+            this.dateTimeSOShipDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeSOShipDate.Location = new System.Drawing.Point(136, 136);
             this.dateTimeSOShipDate.Name = "dateTimeSOShipDate";
-            this.dateTimeSOShipDate.Size = new System.Drawing.Size(138, 20);
-            this.dateTimeSOShipDate.TabIndex = 32;
+            this.dateTimeSOShipDate.Size = new System.Drawing.Size(126, 20);
+            this.dateTimeSOShipDate.TabIndex = 106;
             // 
             // dateTimeSOOrderDate
             // 
+            this.dateTimeSOOrderDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimeSOOrderDate.Location = new System.Drawing.Point(136, 112);
             this.dateTimeSOOrderDate.Name = "dateTimeSOOrderDate";
-            this.dateTimeSOOrderDate.Size = new System.Drawing.Size(138, 20);
-            this.dateTimeSOOrderDate.TabIndex = 32;
+            this.dateTimeSOOrderDate.Size = new System.Drawing.Size(126, 20);
+            this.dateTimeSOOrderDate.TabIndex = 105;
             // 
             // panel4
             // 
@@ -850,9 +912,9 @@
             this.panel4.Controls.Add(this.textSOPProductPartNumber);
             this.panel4.Controls.Add(this.label70);
             this.panel4.Controls.Add(this.label72);
-            this.panel4.Location = new System.Drawing.Point(1088, 14);
+            this.panel4.Location = new System.Drawing.Point(1079, 193);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(269, 174);
+            this.panel4.Size = new System.Drawing.Size(269, 135);
             this.panel4.TabIndex = 31;
             // 
             // textSOPQTY
@@ -860,7 +922,7 @@
             this.textSOPQTY.Location = new System.Drawing.Point(126, 105);
             this.textSOPQTY.Name = "textSOPQTY";
             this.textSOPQTY.Size = new System.Drawing.Size(126, 20);
-            this.textSOPQTY.TabIndex = 24;
+            this.textSOPQTY.TabIndex = 193;
             // 
             // label67
             // 
@@ -870,14 +932,13 @@
             this.label67.Size = new System.Drawing.Size(29, 13);
             this.label67.TabIndex = 13;
             this.label67.Text = "QTY";
-            
             // 
             // textSOPVariant2
             // 
             this.textSOPVariant2.Location = new System.Drawing.Point(126, 80);
             this.textSOPVariant2.Name = "textSOPVariant2";
             this.textSOPVariant2.Size = new System.Drawing.Size(126, 20);
-            this.textSOPVariant2.TabIndex = 24;
+            this.textSOPVariant2.TabIndex = 192;
             // 
             // label68
             // 
@@ -887,14 +948,13 @@
             this.label68.Size = new System.Drawing.Size(46, 13);
             this.label68.TabIndex = 13;
             this.label68.Text = "Variant2";
-            
             // 
             // textSOPVariant1
             // 
             this.textSOPVariant1.Location = new System.Drawing.Point(126, 57);
             this.textSOPVariant1.Name = "textSOPVariant1";
             this.textSOPVariant1.Size = new System.Drawing.Size(126, 20);
-            this.textSOPVariant1.TabIndex = 24;
+            this.textSOPVariant1.TabIndex = 191;
             // 
             // label69
             // 
@@ -904,14 +964,13 @@
             this.label69.Size = new System.Drawing.Size(46, 13);
             this.label69.TabIndex = 13;
             this.label69.Text = "Variant1";
-            
             // 
             // textSOPProductPartNumber
             // 
             this.textSOPProductPartNumber.Location = new System.Drawing.Point(126, 31);
             this.textSOPProductPartNumber.Name = "textSOPProductPartNumber";
             this.textSOPProductPartNumber.Size = new System.Drawing.Size(126, 20);
-            this.textSOPProductPartNumber.TabIndex = 24;
+            this.textSOPProductPartNumber.TabIndex = 190;
             // 
             // label70
             // 
@@ -921,7 +980,6 @@
             this.label70.Size = new System.Drawing.Size(100, 13);
             this.label70.TabIndex = 13;
             this.label70.Text = "ProductPartNumber";
-            
             // 
             // label72
             // 
@@ -931,7 +989,6 @@
             this.label72.Size = new System.Drawing.Size(79, 13);
             this.label72.TabIndex = 13;
             this.label72.Text = "PRODUCTION";
-            
             // 
             // panel3
             // 
@@ -947,7 +1004,7 @@
             this.panel3.Controls.Add(this.textSOLLine);
             this.panel3.Controls.Add(this.label61);
             this.panel3.Controls.Add(this.label66);
-            this.panel3.Location = new System.Drawing.Point(804, 14);
+            this.panel3.Location = new System.Drawing.Point(1079, 13);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(269, 174);
             this.panel3.TabIndex = 31;
@@ -957,7 +1014,8 @@
             this.textSOLQTY.Location = new System.Drawing.Point(131, 131);
             this.textSOLQTY.Name = "textSOLQTY";
             this.textSOLQTY.Size = new System.Drawing.Size(126, 20);
-            this.textSOLQTY.TabIndex = 24;
+            this.textSOLQTY.TabIndex = 184;
+            this.textSOLQTY.Text = "1";
             // 
             // label65
             // 
@@ -967,14 +1025,13 @@
             this.label65.Size = new System.Drawing.Size(29, 13);
             this.label65.TabIndex = 13;
             this.label65.Text = "QTY";
-            
             // 
             // textSOLVariant2
             // 
             this.textSOLVariant2.Location = new System.Drawing.Point(131, 106);
             this.textSOLVariant2.Name = "textSOLVariant2";
             this.textSOLVariant2.Size = new System.Drawing.Size(126, 20);
-            this.textSOLVariant2.TabIndex = 24;
+            this.textSOLVariant2.TabIndex = 183;
             // 
             // label64
             // 
@@ -984,14 +1041,13 @@
             this.label64.Size = new System.Drawing.Size(46, 13);
             this.label64.TabIndex = 13;
             this.label64.Text = "Variant2";
-            
             // 
             // textSOLVariant1
             // 
             this.textSOLVariant1.Location = new System.Drawing.Point(131, 83);
             this.textSOLVariant1.Name = "textSOLVariant1";
             this.textSOLVariant1.Size = new System.Drawing.Size(126, 20);
-            this.textSOLVariant1.TabIndex = 24;
+            this.textSOLVariant1.TabIndex = 182;
             // 
             // label63
             // 
@@ -1001,14 +1057,14 @@
             this.label63.Size = new System.Drawing.Size(46, 13);
             this.label63.TabIndex = 13;
             this.label63.Text = "Variant1";
-            
             // 
             // textSOLProductPartNumber
             // 
             this.textSOLProductPartNumber.Location = new System.Drawing.Point(131, 57);
             this.textSOLProductPartNumber.Name = "textSOLProductPartNumber";
             this.textSOLProductPartNumber.Size = new System.Drawing.Size(126, 20);
-            this.textSOLProductPartNumber.TabIndex = 24;
+            this.textSOLProductPartNumber.TabIndex = 181;
+            this.textSOLProductPartNumber.Text = "1111";
             // 
             // label62
             // 
@@ -1018,14 +1074,13 @@
             this.label62.Size = new System.Drawing.Size(100, 13);
             this.label62.TabIndex = 13;
             this.label62.Text = "ProductPartNumber";
-            
             // 
             // textSOLLine
             // 
             this.textSOLLine.Location = new System.Drawing.Point(131, 31);
             this.textSOLLine.Name = "textSOLLine";
             this.textSOLLine.Size = new System.Drawing.Size(126, 20);
-            this.textSOLLine.TabIndex = 24;
+            this.textSOLLine.TabIndex = 180;
             this.textSOLLine.Text = "1";
             // 
             // label61
@@ -1036,7 +1091,6 @@
             this.label61.Size = new System.Drawing.Size(27, 13);
             this.label61.TabIndex = 13;
             this.label61.Text = "Line";
-            
             // 
             // label66
             // 
@@ -1046,7 +1100,6 @@
             this.label66.Size = new System.Drawing.Size(73, 13);
             this.label66.TabIndex = 13;
             this.label66.Text = "ORDER LINE";
-            
             // 
             // chkUrgent
             // 
@@ -1054,9 +1107,8 @@
             this.chkUrgent.Location = new System.Drawing.Point(136, 164);
             this.chkUrgent.Name = "chkUrgent";
             this.chkUrgent.Size = new System.Drawing.Size(15, 14);
-            this.chkUrgent.TabIndex = 27;
+            this.chkUrgent.TabIndex = 107;
             this.chkUrgent.UseVisualStyleBackColor = true;
-            
             // 
             // label33
             // 
@@ -1067,7 +1119,6 @@
             this.label33.Size = new System.Drawing.Size(92, 13);
             this.label33.TabIndex = 17;
             this.label33.Text = "HostOrderNumber";
-            
             // 
             // label34
             // 
@@ -1078,7 +1129,6 @@
             this.label34.Size = new System.Drawing.Size(81, 13);
             this.label34.TabIndex = 19;
             this.label34.Text = "OrderNumber";
-            
             // 
             // label32
             // 
@@ -1089,16 +1139,14 @@
             this.label32.Size = new System.Drawing.Size(66, 13);
             this.label32.TabIndex = 12;
             this.label32.Text = "OrderType";
-            
             // 
             // textSOHostOrderNumber
             // 
             this.textSOHostOrderNumber.Location = new System.Drawing.Point(136, 29);
             this.textSOHostOrderNumber.Name = "textSOHostOrderNumber";
             this.textSOHostOrderNumber.Size = new System.Drawing.Size(126, 20);
-            this.textSOHostOrderNumber.TabIndex = 22;
+            this.textSOHostOrderNumber.TabIndex = 102;
             this.textSOHostOrderNumber.Text = "STD";
-            
             // 
             // label60
             // 
@@ -1108,7 +1156,6 @@
             this.label60.Size = new System.Drawing.Size(43, 13);
             this.label60.TabIndex = 13;
             this.label60.Text = "Country";
-            
             // 
             // label58
             // 
@@ -1118,7 +1165,6 @@
             this.label58.Size = new System.Drawing.Size(43, 13);
             this.label58.TabIndex = 13;
             this.label58.Text = "Country";
-            
             // 
             // label59
             // 
@@ -1128,7 +1174,6 @@
             this.label59.Size = new System.Drawing.Size(32, 13);
             this.label59.TabIndex = 13;
             this.label59.Text = "State";
-            
             // 
             // label57
             // 
@@ -1138,7 +1183,6 @@
             this.label57.Size = new System.Drawing.Size(32, 13);
             this.label57.TabIndex = 13;
             this.label57.Text = "State";
-            
             // 
             // label49
             // 
@@ -1148,7 +1192,6 @@
             this.label49.Size = new System.Drawing.Size(49, 13);
             this.label49.TabIndex = 13;
             this.label49.Text = "Province";
-            
             // 
             // label40
             // 
@@ -1158,7 +1201,6 @@
             this.label40.Size = new System.Drawing.Size(49, 13);
             this.label40.TabIndex = 13;
             this.label40.Text = "Province";
-            
             // 
             // label48
             // 
@@ -1168,7 +1210,6 @@
             this.label48.Size = new System.Drawing.Size(24, 13);
             this.label48.TabIndex = 13;
             this.label48.Text = "City";
-            
             // 
             // label39
             // 
@@ -1178,7 +1219,6 @@
             this.label39.Size = new System.Drawing.Size(24, 13);
             this.label39.TabIndex = 13;
             this.label39.Text = "City";
-            
             // 
             // label47
             // 
@@ -1338,39 +1378,37 @@
             this.textSOOrderNumber.Location = new System.Drawing.Point(136, 4);
             this.textSOOrderNumber.Name = "textSOOrderNumber";
             this.textSOOrderNumber.Size = new System.Drawing.Size(126, 20);
-            this.textSOOrderNumber.TabIndex = 21;
+            this.textSOOrderNumber.TabIndex = 101;
             this.textSOOrderNumber.Text = "KLJU100";
-            
             // 
             // textSOWarehouse
             // 
             this.textSOWarehouse.Location = new System.Drawing.Point(136, 265);
             this.textSOWarehouse.Name = "textSOWarehouse";
             this.textSOWarehouse.Size = new System.Drawing.Size(126, 20);
-            this.textSOWarehouse.TabIndex = 29;
+            this.textSOWarehouse.TabIndex = 111;
             this.textSOWarehouse.Text = "KLJU";
-            
             // 
             // textSOOrderInfo
             // 
             this.textSOOrderInfo.Location = new System.Drawing.Point(136, 239);
             this.textSOOrderInfo.Name = "textSOOrderInfo";
             this.textSOOrderInfo.Size = new System.Drawing.Size(126, 20);
-            this.textSOOrderInfo.TabIndex = 29;
+            this.textSOOrderInfo.TabIndex = 110;
             // 
             // textSOPackInfo
             // 
             this.textSOPackInfo.Location = new System.Drawing.Point(136, 213);
             this.textSOPackInfo.Name = "textSOPackInfo";
             this.textSOPackInfo.Size = new System.Drawing.Size(126, 20);
-            this.textSOPackInfo.TabIndex = 29;
+            this.textSOPackInfo.TabIndex = 109;
             // 
             // textSOPickInfo
             // 
             this.textSOPickInfo.Location = new System.Drawing.Point(136, 187);
             this.textSOPickInfo.Name = "textSOPickInfo";
             this.textSOPickInfo.Size = new System.Drawing.Size(126, 20);
-            this.textSOPickInfo.TabIndex = 29;
+            this.textSOPickInfo.TabIndex = 108;
             // 
             // label56
             // 
@@ -1396,9 +1434,8 @@
             this.textSOShippingProduct.Location = new System.Drawing.Point(136, 83);
             this.textSOShippingProduct.Name = "textSOShippingProduct";
             this.textSOShippingProduct.Size = new System.Drawing.Size(126, 20);
-            this.textSOShippingProduct.TabIndex = 28;
+            this.textSOShippingProduct.TabIndex = 104;
             this.textSOShippingProduct.Text = "Standard";
-            
             // 
             // label54
             // 
@@ -1414,9 +1451,8 @@
             this.textSOOrderType.Location = new System.Drawing.Point(136, 55);
             this.textSOOrderType.Name = "textSOOrderType";
             this.textSOOrderType.Size = new System.Drawing.Size(126, 20);
-            this.textSOOrderType.TabIndex = 23;
+            this.textSOOrderType.TabIndex = 103;
             this.textSOOrderType.Text = "S";
-            
             // 
             // label53
             // 
@@ -1450,7 +1486,7 @@
             this.textSOCustomerCountry.Location = new System.Drawing.Point(653, 311);
             this.textSOCustomerCountry.Name = "textSOCustomerCountry";
             this.textSOCustomerCountry.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerCountry.TabIndex = 24;
+            this.textSOCustomerCountry.TabIndex = 150;
             this.textSOCustomerCountry.Text = "DK";
             // 
             // textSOCustomerState
@@ -1458,14 +1494,14 @@
             this.textSOCustomerState.Location = new System.Drawing.Point(653, 289);
             this.textSOCustomerState.Name = "textSOCustomerState";
             this.textSOCustomerState.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerState.TabIndex = 24;
+            this.textSOCustomerState.TabIndex = 149;
             // 
             // textSOCountry
             // 
             this.textSOCountry.Location = new System.Drawing.Point(392, 308);
             this.textSOCountry.Name = "textSOCountry";
             this.textSOCountry.Size = new System.Drawing.Size(126, 20);
-            this.textSOCountry.TabIndex = 24;
+            this.textSOCountry.TabIndex = 131;
             this.textSOCountry.Text = "DK";
             // 
             // textSOCustomerProvince
@@ -1473,28 +1509,28 @@
             this.textSOCustomerProvince.Location = new System.Drawing.Point(653, 263);
             this.textSOCustomerProvince.Name = "textSOCustomerProvince";
             this.textSOCustomerProvince.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerProvince.TabIndex = 24;
+            this.textSOCustomerProvince.TabIndex = 148;
             // 
             // textSOState
             // 
             this.textSOState.Location = new System.Drawing.Point(392, 286);
             this.textSOState.Name = "textSOState";
             this.textSOState.Size = new System.Drawing.Size(126, 20);
-            this.textSOState.TabIndex = 24;
+            this.textSOState.TabIndex = 130;
             // 
             // textSOProvince
             // 
             this.textSOProvince.Location = new System.Drawing.Point(392, 260);
             this.textSOProvince.Name = "textSOProvince";
             this.textSOProvince.Size = new System.Drawing.Size(126, 20);
-            this.textSOProvince.TabIndex = 24;
+            this.textSOProvince.TabIndex = 129;
             // 
             // textSOCustomerCity
             // 
             this.textSOCustomerCity.Location = new System.Drawing.Point(653, 237);
             this.textSOCustomerCity.Name = "textSOCustomerCity";
             this.textSOCustomerCity.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerCity.TabIndex = 24;
+            this.textSOCustomerCity.TabIndex = 147;
             this.textSOCustomerCity.Text = "Køge";
             // 
             // textSOCity
@@ -1502,7 +1538,7 @@
             this.textSOCity.Location = new System.Drawing.Point(392, 234);
             this.textSOCity.Name = "textSOCity";
             this.textSOCity.Size = new System.Drawing.Size(126, 20);
-            this.textSOCity.TabIndex = 24;
+            this.textSOCity.TabIndex = 128;
             this.textSOCity.Text = "Køge";
             // 
             // textSOCustomerZip
@@ -1510,7 +1546,7 @@
             this.textSOCustomerZip.Location = new System.Drawing.Point(653, 211);
             this.textSOCustomerZip.Name = "textSOCustomerZip";
             this.textSOCustomerZip.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerZip.TabIndex = 24;
+            this.textSOCustomerZip.TabIndex = 146;
             this.textSOCustomerZip.Text = "4600";
             // 
             // textSOZip
@@ -1518,7 +1554,7 @@
             this.textSOZip.Location = new System.Drawing.Point(392, 208);
             this.textSOZip.Name = "textSOZip";
             this.textSOZip.Size = new System.Drawing.Size(126, 20);
-            this.textSOZip.TabIndex = 24;
+            this.textSOZip.TabIndex = 127;
             this.textSOZip.Text = "4600";
             // 
             // textSOCustomerEmail
@@ -1526,39 +1562,35 @@
             this.textSOCustomerEmail.Location = new System.Drawing.Point(653, 185);
             this.textSOCustomerEmail.Name = "textSOCustomerEmail";
             this.textSOCustomerEmail.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerEmail.TabIndex = 24;
-            this.textSOCustomerEmail.Text = "klaus@juhls.net";
+            this.textSOCustomerEmail.TabIndex = 145;
             // 
             // textSOEmail
             // 
             this.textSOEmail.Location = new System.Drawing.Point(392, 182);
             this.textSOEmail.Name = "textSOEmail";
             this.textSOEmail.Size = new System.Drawing.Size(126, 20);
-            this.textSOEmail.TabIndex = 24;
-            this.textSOEmail.Text = "klaus@juhls.net";
+            this.textSOEmail.TabIndex = 126;
             // 
             // textSOCustomerPhone
             // 
             this.textSOCustomerPhone.Location = new System.Drawing.Point(653, 159);
             this.textSOCustomerPhone.Name = "textSOCustomerPhone";
             this.textSOCustomerPhone.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerPhone.TabIndex = 24;
-            this.textSOCustomerPhone.Text = "+4550338080";
+            this.textSOCustomerPhone.TabIndex = 144;
             // 
             // textSOPhone
             // 
             this.textSOPhone.Location = new System.Drawing.Point(392, 156);
             this.textSOPhone.Name = "textSOPhone";
             this.textSOPhone.Size = new System.Drawing.Size(126, 20);
-            this.textSOPhone.TabIndex = 24;
-            this.textSOPhone.Text = "+4550338080";
+            this.textSOPhone.TabIndex = 125;
             // 
             // textSOCustomerContactPerson
             // 
             this.textSOCustomerContactPerson.Location = new System.Drawing.Point(653, 133);
             this.textSOCustomerContactPerson.Name = "textSOCustomerContactPerson";
             this.textSOCustomerContactPerson.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerContactPerson.TabIndex = 24;
+            this.textSOCustomerContactPerson.TabIndex = 143;
             this.textSOCustomerContactPerson.Text = "Klaus";
             // 
             // textSOContactPerson
@@ -1566,7 +1598,7 @@
             this.textSOContactPerson.Location = new System.Drawing.Point(392, 130);
             this.textSOContactPerson.Name = "textSOContactPerson";
             this.textSOContactPerson.Size = new System.Drawing.Size(126, 20);
-            this.textSOContactPerson.TabIndex = 24;
+            this.textSOContactPerson.TabIndex = 124;
             this.textSOContactPerson.Text = "Klaus";
             // 
             // textSOCustomerAddress2
@@ -1574,21 +1606,21 @@
             this.textSOCustomerAddress2.Location = new System.Drawing.Point(653, 107);
             this.textSOCustomerAddress2.Name = "textSOCustomerAddress2";
             this.textSOCustomerAddress2.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerAddress2.TabIndex = 24;
+            this.textSOCustomerAddress2.TabIndex = 142;
             // 
             // textSOAddress2
             // 
             this.textSOAddress2.Location = new System.Drawing.Point(392, 104);
             this.textSOAddress2.Name = "textSOAddress2";
             this.textSOAddress2.Size = new System.Drawing.Size(126, 20);
-            this.textSOAddress2.TabIndex = 24;
+            this.textSOAddress2.TabIndex = 123;
             // 
             // textSOCustomerAddress1
             // 
             this.textSOCustomerAddress1.Location = new System.Drawing.Point(653, 81);
             this.textSOCustomerAddress1.Name = "textSOCustomerAddress1";
             this.textSOCustomerAddress1.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerAddress1.TabIndex = 24;
+            this.textSOCustomerAddress1.TabIndex = 141;
             this.textSOCustomerAddress1.Text = "Nicolinevej 3";
             // 
             // textSOName
@@ -1596,7 +1628,7 @@
             this.textSOName.Location = new System.Drawing.Point(392, 55);
             this.textSOName.Name = "textSOName";
             this.textSOName.Size = new System.Drawing.Size(126, 20);
-            this.textSOName.TabIndex = 24;
+            this.textSOName.TabIndex = 121;
             this.textSOName.Text = "Klaus Juhl";
             // 
             // textSOAddress1
@@ -1604,7 +1636,7 @@
             this.textSOAddress1.Location = new System.Drawing.Point(392, 78);
             this.textSOAddress1.Name = "textSOAddress1";
             this.textSOAddress1.Size = new System.Drawing.Size(126, 20);
-            this.textSOAddress1.TabIndex = 24;
+            this.textSOAddress1.TabIndex = 122;
             this.textSOAddress1.Text = "Nicolinevej 3";
             // 
             // textSOCustomerName
@@ -1612,7 +1644,7 @@
             this.textSOCustomerName.Location = new System.Drawing.Point(653, 55);
             this.textSOCustomerName.Name = "textSOCustomerName";
             this.textSOCustomerName.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerName.TabIndex = 24;
+            this.textSOCustomerName.TabIndex = 140;
             this.textSOCustomerName.Text = "Klaus Juhl";
             // 
             // textSOCustomerNumber
@@ -1620,7 +1652,7 @@
             this.textSOCustomerNumber.Location = new System.Drawing.Point(392, 30);
             this.textSOCustomerNumber.Name = "textSOCustomerNumber";
             this.textSOCustomerNumber.Size = new System.Drawing.Size(126, 20);
-            this.textSOCustomerNumber.TabIndex = 24;
+            this.textSOCustomerNumber.TabIndex = 120;
             this.textSOCustomerNumber.Text = "50338080";
             // 
             // label27
@@ -1631,7 +1663,6 @@
             this.label27.Size = new System.Drawing.Size(85, 13);
             this.label27.TabIndex = 11;
             this.label27.Text = "ShippingProduct";
-            
             // 
             // label28
             // 
@@ -1641,97 +1672,6 @@
             this.label28.Size = new System.Drawing.Size(39, 13);
             this.label28.TabIndex = 16;
             this.label28.Text = "Urgent";
-            
-            // 
-            // lblAPIReturnCode
-            // 
-            this.lblAPIReturnCode.AutoSize = true;
-            this.lblAPIReturnCode.Location = new System.Drawing.Point(392, 13);
-            this.lblAPIReturnCode.Name = "lblAPIReturnCode";
-            this.lblAPIReturnCode.Size = new System.Drawing.Size(10, 13);
-            this.lblAPIReturnCode.TabIndex = 3;
-            this.lblAPIReturnCode.Text = "-";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(314, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Returncode";
-            // 
-            // textAPIKey
-            // 
-            this.textAPIKey.Location = new System.Drawing.Point(90, 9);
-            this.textAPIKey.Name = "textAPIKey";
-            this.textAPIKey.Size = new System.Drawing.Size(172, 20);
-            this.textAPIKey.TabIndex = 0;
-            this.textAPIKey.Text = "klaus1810";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "APIKey";
-            // 
-            // btnGetJSONTransactions
-            // 
-            this.btnGetJSONTransactions.Location = new System.Drawing.Point(1408, 628);
-            this.btnGetJSONTransactions.Name = "btnGetJSONTransactions";
-            this.btnGetJSONTransactions.Size = new System.Drawing.Size(141, 32);
-            this.btnGetJSONTransactions.TabIndex = 4;
-            this.btnGetJSONTransactions.Text = "Get Transactions";
-            this.btnGetJSONTransactions.UseVisualStyleBackColor = true;
-            this.btnGetJSONTransactions.Click += new System.EventHandler(this.btnGetJSONTransactions_Click);
-            // 
-            // txtTransactions
-            // 
-            this.txtTransactions.Location = new System.Drawing.Point(12, 403);
-            this.txtTransactions.Name = "txtTransactions";
-            this.txtTransactions.Size = new System.Drawing.Size(1537, 219);
-            this.txtTransactions.TabIndex = 5;
-            this.txtTransactions.Text = "";
-            // 
-            // textNumOfTrans
-            // 
-            this.textNumOfTrans.Location = new System.Drawing.Point(1264, 635);
-            this.textNumOfTrans.Name = "textNumOfTrans";
-            this.textNumOfTrans.Size = new System.Drawing.Size(126, 20);
-            this.textNumOfTrans.TabIndex = 24;
-            this.textNumOfTrans.Text = "5";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(1157, 638);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(101, 13);
-            this.label71.TabIndex = 13;
-            this.label71.Text = "Num of transactions";
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(996, 630);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(108, 24);
-            this.btnClear.TabIndex = 25;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // btnSalesOrderCancel
-            // 
-            this.btnSalesOrderCancel.Location = new System.Drawing.Point(1067, 277);
-            this.btnSalesOrderCancel.Name = "btnSalesOrderCancel";
-            this.btnSalesOrderCancel.Size = new System.Drawing.Size(164, 31);
-            this.btnSalesOrderCancel.TabIndex = 34;
-            this.btnSalesOrderCancel.Text = "Cancel SalesOrder";
-            this.btnSalesOrderCancel.UseVisualStyleBackColor = true;
-            this.btnSalesOrderCancel.Click += new System.EventHandler(this.btnSalesOrderCancel_Click);
             // 
             // tabPurchaseOrder
             // 
@@ -1786,28 +1726,15 @@
             this.tabPurchaseOrder.Text = "PurchaseOrder";
             this.tabPurchaseOrder.UseVisualStyleBackColor = true;
             // 
-            // tabReturnOrder
+            // btnPurchaseOrderFinished
             // 
-            this.tabReturnOrder.Controls.Add(this.btnReturnOrderCreate);
-            this.tabReturnOrder.Controls.Add(this.panel6);
-            this.tabReturnOrder.Controls.Add(this.dateTimePickerROReturnDate);
-            this.tabReturnOrder.Controls.Add(this.label86);
-            this.tabReturnOrder.Controls.Add(this.label88);
-            this.tabReturnOrder.Controls.Add(this.label90);
-            this.tabReturnOrder.Controls.Add(this.txtROOrgOrderNumber);
-            this.tabReturnOrder.Controls.Add(this.label92);
-            this.tabReturnOrder.Controls.Add(this.txtROOrderNumber);
-            this.tabReturnOrder.Controls.Add(this.txtROWarehouse);
-            this.tabReturnOrder.Controls.Add(this.label94);
-            this.tabReturnOrder.Controls.Add(this.txtROOrderType);
-            this.tabReturnOrder.Controls.Add(this.label103);
-            this.tabReturnOrder.Controls.Add(this.txtROCustomerNumber);
-            this.tabReturnOrder.Location = new System.Drawing.Point(4, 22);
-            this.tabReturnOrder.Name = "tabReturnOrder";
-            this.tabReturnOrder.Size = new System.Drawing.Size(1533, 340);
-            this.tabReturnOrder.TabIndex = 3;
-            this.tabReturnOrder.Text = "ReturnOrder";
-            this.tabReturnOrder.UseVisualStyleBackColor = true;
+            this.btnPurchaseOrderFinished.Location = new System.Drawing.Point(1012, 292);
+            this.btnPurchaseOrderFinished.Name = "btnPurchaseOrderFinished";
+            this.btnPurchaseOrderFinished.Size = new System.Drawing.Size(164, 31);
+            this.btnPurchaseOrderFinished.TabIndex = 104;
+            this.btnPurchaseOrderFinished.Text = "Finish PurchaseOrder";
+            this.btnPurchaseOrderFinished.UseVisualStyleBackColor = true;
+            this.btnPurchaseOrderFinished.Click += new System.EventHandler(this.btnPurchaseOrderFinished_Click);
             // 
             // btnCreatePurchaseOrder
             // 
@@ -1859,6 +1786,13 @@
             this.txtPOLQTY.TabIndex = 24;
             this.txtPOLQTY.Text = "1";
             // 
+            // dateTimePickerPOLETA
+            // 
+            this.dateTimePickerPOLETA.Location = new System.Drawing.Point(131, 157);
+            this.dateTimePickerPOLETA.Name = "dateTimePickerPOLETA";
+            this.dateTimePickerPOLETA.Size = new System.Drawing.Size(138, 20);
+            this.dateTimePickerPOLETA.TabIndex = 101;
+            // 
             // label73
             // 
             this.label73.AutoSize = true;
@@ -1867,6 +1801,38 @@
             this.label73.Size = new System.Drawing.Size(29, 13);
             this.label73.TabIndex = 13;
             this.label73.Text = "QTY";
+            // 
+            // txtPOLDescription
+            // 
+            this.txtPOLDescription.Location = new System.Drawing.Point(131, 180);
+            this.txtPOLDescription.Name = "txtPOLDescription";
+            this.txtPOLDescription.Size = new System.Drawing.Size(126, 20);
+            this.txtPOLDescription.TabIndex = 24;
+            // 
+            // txtPOLERPStore
+            // 
+            this.txtPOLERPStore.Location = new System.Drawing.Point(131, 206);
+            this.txtPOLERPStore.Name = "txtPOLERPStore";
+            this.txtPOLERPStore.Size = new System.Drawing.Size(126, 20);
+            this.txtPOLERPStore.TabIndex = 24;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(19, 183);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(60, 13);
+            this.label84.TabIndex = 13;
+            this.label84.Text = "Description";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(19, 209);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(54, 13);
+            this.label82.TabIndex = 13;
+            this.label82.Text = "ERPStore";
             // 
             // txtPOLVariant2
             // 
@@ -1942,6 +1908,15 @@
             this.label78.Size = new System.Drawing.Size(135, 13);
             this.label78.TabIndex = 13;
             this.label78.Text = "PURCHASE ORDER LINE";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(19, 157);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(28, 13);
+            this.label79.TabIndex = 67;
+            this.label79.Text = "ETA";
             // 
             // chkPOAllowCrossDock
             // 
@@ -2215,7 +2190,6 @@
             this.txtPOEmail.Name = "txtPOEmail";
             this.txtPOEmail.Size = new System.Drawing.Size(126, 20);
             this.txtPOEmail.TabIndex = 75;
-            this.txtPOEmail.Text = "klaus@juhls.net";
             // 
             // txtPOPhone
             // 
@@ -2223,7 +2197,6 @@
             this.txtPOPhone.Name = "txtPOPhone";
             this.txtPOPhone.Size = new System.Drawing.Size(126, 20);
             this.txtPOPhone.TabIndex = 73;
-            this.txtPOPhone.Text = "+4550338080";
             // 
             // txtPOContactPerson
             // 
@@ -2273,63 +2246,221 @@
             this.label112.TabIndex = 59;
             this.label112.Text = "AllowCrossDock";
             // 
-            // label79
+            // tabReturnOrder
             // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(19, 157);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(28, 13);
-            this.label79.TabIndex = 67;
-            this.label79.Text = "ETA";
+            this.tabReturnOrder.Controls.Add(this.btnReturnOrderCreate);
+            this.tabReturnOrder.Controls.Add(this.panel6);
+            this.tabReturnOrder.Controls.Add(this.dateTimePickerROReturnDate);
+            this.tabReturnOrder.Controls.Add(this.label86);
+            this.tabReturnOrder.Controls.Add(this.label88);
+            this.tabReturnOrder.Controls.Add(this.label90);
+            this.tabReturnOrder.Controls.Add(this.txtROOrgOrderNumber);
+            this.tabReturnOrder.Controls.Add(this.label92);
+            this.tabReturnOrder.Controls.Add(this.txtROOrderNumber);
+            this.tabReturnOrder.Controls.Add(this.txtROWarehouse);
+            this.tabReturnOrder.Controls.Add(this.label94);
+            this.tabReturnOrder.Controls.Add(this.txtROOrderType);
+            this.tabReturnOrder.Controls.Add(this.label103);
+            this.tabReturnOrder.Controls.Add(this.txtROCustomerNumber);
+            this.tabReturnOrder.Location = new System.Drawing.Point(4, 22);
+            this.tabReturnOrder.Name = "tabReturnOrder";
+            this.tabReturnOrder.Size = new System.Drawing.Size(1533, 340);
+            this.tabReturnOrder.TabIndex = 3;
+            this.tabReturnOrder.Text = "ReturnOrder";
+            this.tabReturnOrder.UseVisualStyleBackColor = true;
             // 
-            // dateTimePickerPOLETA
+            // btnReturnOrderCreate
             // 
-            this.dateTimePickerPOLETA.Location = new System.Drawing.Point(131, 157);
-            this.dateTimePickerPOLETA.Name = "dateTimePickerPOLETA";
-            this.dateTimePickerPOLETA.Size = new System.Drawing.Size(138, 20);
-            this.dateTimePickerPOLETA.TabIndex = 101;
+            this.btnReturnOrderCreate.Location = new System.Drawing.Point(782, 292);
+            this.btnReturnOrderCreate.Name = "btnReturnOrderCreate";
+            this.btnReturnOrderCreate.Size = new System.Drawing.Size(183, 31);
+            this.btnReturnOrderCreate.TabIndex = 57;
+            this.btnReturnOrderCreate.Text = "CreateReturnOrder";
+            this.btnReturnOrderCreate.UseVisualStyleBackColor = true;
+            this.btnReturnOrderCreate.Click += new System.EventHandler(this.btnReturnOrderCreate_Click);
             // 
-            // label82
+            // panel6
             // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(19, 209);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(54, 13);
-            this.label82.TabIndex = 13;
-            this.label82.Text = "ERPStore";
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.txtROLReturnDescription);
+            this.panel6.Controls.Add(this.label117);
+            this.panel6.Controls.Add(this.txtROLCustomsReference);
+            this.panel6.Controls.Add(this.label116);
+            this.panel6.Controls.Add(this.txtROLExtReference);
+            this.panel6.Controls.Add(this.label115);
+            this.panel6.Controls.Add(this.txtROLQTY);
+            this.panel6.Controls.Add(this.label96);
+            this.panel6.Controls.Add(this.txtROLVariant2);
+            this.panel6.Controls.Add(this.label98);
+            this.panel6.Controls.Add(this.txtROLVariant1);
+            this.panel6.Controls.Add(this.label100);
+            this.panel6.Controls.Add(this.txtROLOrgLine);
+            this.panel6.Controls.Add(this.label114);
+            this.panel6.Controls.Add(this.txtROLPartNumber);
+            this.panel6.Controls.Add(this.label110);
+            this.panel6.Controls.Add(this.txtROLLine);
+            this.panel6.Controls.Add(this.label111);
+            this.panel6.Controls.Add(this.label113);
+            this.panel6.Location = new System.Drawing.Point(463, 17);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(269, 268);
+            this.panel6.TabIndex = 56;
             // 
-            // txtPOLERPStore
+            // txtROLReturnDescription
             // 
-            this.txtPOLERPStore.Location = new System.Drawing.Point(131, 206);
-            this.txtPOLERPStore.Name = "txtPOLERPStore";
-            this.txtPOLERPStore.Size = new System.Drawing.Size(126, 20);
-            this.txtPOLERPStore.TabIndex = 24;
+            this.txtROLReturnDescription.Location = new System.Drawing.Point(131, 239);
+            this.txtROLReturnDescription.Name = "txtROLReturnDescription";
+            this.txtROLReturnDescription.Size = new System.Drawing.Size(126, 20);
+            this.txtROLReturnDescription.TabIndex = 24;
             // 
-            // label84
+            // label117
             // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(19, 183);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(60, 13);
-            this.label84.TabIndex = 13;
-            this.label84.Text = "Description";
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(19, 242);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(92, 13);
+            this.label117.TabIndex = 13;
+            this.label117.Text = "ReturnDescription";
             // 
-            // txtPOLDescription
+            // txtROLCustomsReference
             // 
-            this.txtPOLDescription.Location = new System.Drawing.Point(131, 180);
-            this.txtPOLDescription.Name = "txtPOLDescription";
-            this.txtPOLDescription.Size = new System.Drawing.Size(126, 20);
-            this.txtPOLDescription.TabIndex = 24;
+            this.txtROLCustomsReference.Location = new System.Drawing.Point(131, 213);
+            this.txtROLCustomsReference.Name = "txtROLCustomsReference";
+            this.txtROLCustomsReference.Size = new System.Drawing.Size(126, 20);
+            this.txtROLCustomsReference.TabIndex = 24;
             // 
-            // btnPurchaseOrderFinished
+            // label116
             // 
-            this.btnPurchaseOrderFinished.Location = new System.Drawing.Point(1012, 292);
-            this.btnPurchaseOrderFinished.Name = "btnPurchaseOrderFinished";
-            this.btnPurchaseOrderFinished.Size = new System.Drawing.Size(164, 31);
-            this.btnPurchaseOrderFinished.TabIndex = 104;
-            this.btnPurchaseOrderFinished.Text = "Finish PurchaseOrder";
-            this.btnPurchaseOrderFinished.UseVisualStyleBackColor = true;
-            this.btnPurchaseOrderFinished.Click += new System.EventHandler(this.btnPurchaseOrderFinished_Click);
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(19, 216);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(97, 13);
+            this.label116.TabIndex = 13;
+            this.label116.Text = "CustomsReference";
+            // 
+            // txtROLExtReference
+            // 
+            this.txtROLExtReference.Location = new System.Drawing.Point(131, 187);
+            this.txtROLExtReference.Name = "txtROLExtReference";
+            this.txtROLExtReference.Size = new System.Drawing.Size(126, 20);
+            this.txtROLExtReference.TabIndex = 24;
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(19, 190);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(72, 13);
+            this.label115.TabIndex = 13;
+            this.label115.Text = "ExtReference";
+            // 
+            // txtROLQTY
+            // 
+            this.txtROLQTY.Location = new System.Drawing.Point(131, 161);
+            this.txtROLQTY.Name = "txtROLQTY";
+            this.txtROLQTY.Size = new System.Drawing.Size(126, 20);
+            this.txtROLQTY.TabIndex = 24;
+            this.txtROLQTY.Text = "1";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(19, 164);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(29, 13);
+            this.label96.TabIndex = 13;
+            this.label96.Text = "QTY";
+            // 
+            // txtROLVariant2
+            // 
+            this.txtROLVariant2.Location = new System.Drawing.Point(131, 136);
+            this.txtROLVariant2.Name = "txtROLVariant2";
+            this.txtROLVariant2.Size = new System.Drawing.Size(126, 20);
+            this.txtROLVariant2.TabIndex = 24;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(19, 139);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(46, 13);
+            this.label98.TabIndex = 13;
+            this.label98.Text = "Variant2";
+            // 
+            // txtROLVariant1
+            // 
+            this.txtROLVariant1.Location = new System.Drawing.Point(131, 113);
+            this.txtROLVariant1.Name = "txtROLVariant1";
+            this.txtROLVariant1.Size = new System.Drawing.Size(126, 20);
+            this.txtROLVariant1.TabIndex = 24;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(19, 116);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(46, 13);
+            this.label100.TabIndex = 13;
+            this.label100.Text = "Variant1";
+            // 
+            // txtROLOrgLine
+            // 
+            this.txtROLOrgLine.Location = new System.Drawing.Point(131, 57);
+            this.txtROLOrgLine.Name = "txtROLOrgLine";
+            this.txtROLOrgLine.Size = new System.Drawing.Size(126, 20);
+            this.txtROLOrgLine.TabIndex = 24;
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(19, 60);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(44, 13);
+            this.label114.TabIndex = 13;
+            this.label114.Text = "OrgLine";
+            // 
+            // txtROLPartNumber
+            // 
+            this.txtROLPartNumber.Location = new System.Drawing.Point(131, 87);
+            this.txtROLPartNumber.Name = "txtROLPartNumber";
+            this.txtROLPartNumber.Size = new System.Drawing.Size(126, 20);
+            this.txtROLPartNumber.TabIndex = 24;
+            this.txtROLPartNumber.Text = "1111";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(19, 90);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(63, 13);
+            this.label110.TabIndex = 13;
+            this.label110.Text = "PartNumber";
+            // 
+            // txtROLLine
+            // 
+            this.txtROLLine.Location = new System.Drawing.Point(131, 31);
+            this.txtROLLine.Name = "txtROLLine";
+            this.txtROLLine.Size = new System.Drawing.Size(126, 20);
+            this.txtROLLine.TabIndex = 24;
+            this.txtROLLine.Text = "1";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(19, 34);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(27, 13);
+            this.label111.TabIndex = 13;
+            this.label111.Text = "Line";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(19, 5);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(73, 13);
+            this.label113.TabIndex = 13;
+            this.label113.Text = "ORDER LINE";
             // 
             // dateTimePickerROReturnDate
             // 
@@ -2435,198 +2566,292 @@
             this.txtROCustomerNumber.TabIndex = 48;
             this.txtROCustomerNumber.Text = "50338080";
             // 
-            // panel6
+            // lblAPIReturnCode
             // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.txtROLReturnDescription);
-            this.panel6.Controls.Add(this.label117);
-            this.panel6.Controls.Add(this.txtROLCustomsReference);
-            this.panel6.Controls.Add(this.label116);
-            this.panel6.Controls.Add(this.txtROLExtReference);
-            this.panel6.Controls.Add(this.label115);
-            this.panel6.Controls.Add(this.txtROLQTY);
-            this.panel6.Controls.Add(this.label96);
-            this.panel6.Controls.Add(this.txtROLVariant2);
-            this.panel6.Controls.Add(this.label98);
-            this.panel6.Controls.Add(this.txtROLVariant1);
-            this.panel6.Controls.Add(this.label100);
-            this.panel6.Controls.Add(this.txtROLOrgLine);
-            this.panel6.Controls.Add(this.label114);
-            this.panel6.Controls.Add(this.txtROLPartNumber);
-            this.panel6.Controls.Add(this.label110);
-            this.panel6.Controls.Add(this.txtROLLine);
-            this.panel6.Controls.Add(this.label111);
-            this.panel6.Controls.Add(this.label113);
-            this.panel6.Location = new System.Drawing.Point(463, 17);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(269, 268);
-            this.panel6.TabIndex = 56;
+            this.lblAPIReturnCode.AutoSize = true;
+            this.lblAPIReturnCode.Location = new System.Drawing.Point(651, 9);
+            this.lblAPIReturnCode.Name = "lblAPIReturnCode";
+            this.lblAPIReturnCode.Size = new System.Drawing.Size(10, 13);
+            this.lblAPIReturnCode.TabIndex = 3;
+            this.lblAPIReturnCode.Text = "-";
             // 
-            // txtROLQTY
+            // label4
             // 
-            this.txtROLQTY.Location = new System.Drawing.Point(131, 161);
-            this.txtROLQTY.Name = "txtROLQTY";
-            this.txtROLQTY.Size = new System.Drawing.Size(126, 20);
-            this.txtROLQTY.TabIndex = 24;
-            this.txtROLQTY.Text = "1";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(573, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Returncode";
             // 
-            // label96
+            // textAPIKey
             // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(19, 164);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(29, 13);
-            this.label96.TabIndex = 13;
-            this.label96.Text = "QTY";
+            this.textAPIKey.Location = new System.Drawing.Point(349, 5);
+            this.textAPIKey.Name = "textAPIKey";
+            this.textAPIKey.Size = new System.Drawing.Size(172, 20);
+            this.textAPIKey.TabIndex = 0;
+            this.textAPIKey.Text = "klaus1810";
             // 
-            // txtROLVariant2
+            // label1
             // 
-            this.txtROLVariant2.Location = new System.Drawing.Point(131, 136);
-            this.txtROLVariant2.Name = "txtROLVariant2";
-            this.txtROLVariant2.Size = new System.Drawing.Size(126, 20);
-            this.txtROLVariant2.TabIndex = 24;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(268, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "APIKey";
             // 
-            // label98
+            // btnGetJSONTransactions
             // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(19, 139);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(46, 13);
-            this.label98.TabIndex = 13;
-            this.label98.Text = "Variant2";
+            this.btnGetJSONTransactions.Location = new System.Drawing.Point(1408, 628);
+            this.btnGetJSONTransactions.Name = "btnGetJSONTransactions";
+            this.btnGetJSONTransactions.Size = new System.Drawing.Size(141, 32);
+            this.btnGetJSONTransactions.TabIndex = 4;
+            this.btnGetJSONTransactions.Text = "Get Transactions";
+            this.btnGetJSONTransactions.UseVisualStyleBackColor = true;
+            this.btnGetJSONTransactions.Click += new System.EventHandler(this.btnGetJSONTransactions_Click);
             // 
-            // txtROLVariant1
+            // txtTransactions
             // 
-            this.txtROLVariant1.Location = new System.Drawing.Point(131, 113);
-            this.txtROLVariant1.Name = "txtROLVariant1";
-            this.txtROLVariant1.Size = new System.Drawing.Size(126, 20);
-            this.txtROLVariant1.TabIndex = 24;
+            this.txtTransactions.Location = new System.Drawing.Point(12, 403);
+            this.txtTransactions.Name = "txtTransactions";
+            this.txtTransactions.Size = new System.Drawing.Size(1537, 219);
+            this.txtTransactions.TabIndex = 5;
+            this.txtTransactions.Text = "";
             // 
-            // label100
+            // textNumOfTrans
             // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(19, 116);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(46, 13);
-            this.label100.TabIndex = 13;
-            this.label100.Text = "Variant1";
+            this.textNumOfTrans.Location = new System.Drawing.Point(1264, 635);
+            this.textNumOfTrans.Name = "textNumOfTrans";
+            this.textNumOfTrans.Size = new System.Drawing.Size(126, 20);
+            this.textNumOfTrans.TabIndex = 24;
+            this.textNumOfTrans.Text = "5";
             // 
-            // txtROLPartNumber
+            // label71
             // 
-            this.txtROLPartNumber.Location = new System.Drawing.Point(131, 87);
-            this.txtROLPartNumber.Name = "txtROLPartNumber";
-            this.txtROLPartNumber.Size = new System.Drawing.Size(126, 20);
-            this.txtROLPartNumber.TabIndex = 24;
-            this.txtROLPartNumber.Text = "1111";
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(1157, 638);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(101, 13);
+            this.label71.TabIndex = 13;
+            this.label71.Text = "Num of transactions";
             // 
-            // label110
+            // btnClear
             // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(19, 90);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(63, 13);
-            this.label110.TabIndex = 13;
-            this.label110.Text = "PartNumber";
+            this.btnClear.Location = new System.Drawing.Point(996, 630);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(108, 24);
+            this.btnClear.TabIndex = 25;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // txtROLLine
+            // label118
             // 
-            this.txtROLLine.Location = new System.Drawing.Point(131, 31);
-            this.txtROLLine.Name = "txtROLLine";
-            this.txtROLLine.Size = new System.Drawing.Size(126, 20);
-            this.txtROLLine.TabIndex = 24;
-            this.txtROLLine.Text = "1";
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(13, 8);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(46, 13);
+            this.label118.TabIndex = 2;
+            this.label118.Text = "APIURL";
             // 
-            // label111
+            // txtURL
             // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(19, 34);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(27, 13);
-            this.label111.TabIndex = 13;
-            this.label111.Text = "Line";
+            this.txtURL.Location = new System.Drawing.Point(77, 6);
+            this.txtURL.Name = "txtURL";
+            this.txtURL.Size = new System.Drawing.Size(172, 20);
+            this.txtURL.TabIndex = 0;
+            this.txtURL.Text = "http://wmsapi.wms.tecsys.dk";
             // 
-            // label113
+            // txtVATNumber
             // 
-            this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(19, 5);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(73, 13);
-            this.label113.TabIndex = 13;
-            this.label113.Text = "ORDER LINE";
+            this.txtVATNumber.Location = new System.Drawing.Point(916, 55);
+            this.txtVATNumber.Name = "txtVATNumber";
+            this.txtVATNumber.Size = new System.Drawing.Size(126, 20);
+            this.txtVATNumber.TabIndex = 160;
             // 
-            // btnReturnOrderCreate
+            // label119
             // 
-            this.btnReturnOrderCreate.Location = new System.Drawing.Point(782, 292);
-            this.btnReturnOrderCreate.Name = "btnReturnOrderCreate";
-            this.btnReturnOrderCreate.Size = new System.Drawing.Size(183, 31);
-            this.btnReturnOrderCreate.TabIndex = 57;
-            this.btnReturnOrderCreate.Text = "CreateReturnOrder";
-            this.btnReturnOrderCreate.UseVisualStyleBackColor = true;
-            this.btnReturnOrderCreate.Click += new System.EventHandler(this.btnReturnOrderCreate_Click);
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(804, 58);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(65, 13);
+            this.label119.TabIndex = 13;
+            this.label119.Text = "VATNumber";
             // 
-            // label114
+            // txtCustomerVATNumber
             // 
-            this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(19, 60);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(44, 13);
-            this.label114.TabIndex = 13;
-            this.label114.Text = "OrgLine";
+            this.txtCustomerVATNumber.Location = new System.Drawing.Point(916, 81);
+            this.txtCustomerVATNumber.Name = "txtCustomerVATNumber";
+            this.txtCustomerVATNumber.Size = new System.Drawing.Size(126, 20);
+            this.txtCustomerVATNumber.TabIndex = 161;
             // 
-            // txtROLOrgLine
+            // label120
             // 
-            this.txtROLOrgLine.Location = new System.Drawing.Point(131, 57);
-            this.txtROLOrgLine.Name = "txtROLOrgLine";
-            this.txtROLOrgLine.Size = new System.Drawing.Size(126, 20);
-            this.txtROLOrgLine.TabIndex = 24;
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(804, 84);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(109, 13);
+            this.label120.TabIndex = 13;
+            this.label120.Text = "CustomerVATNumber";
             // 
-            // label115
+            // txtInvoiceNumber
             // 
-            this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(19, 190);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(72, 13);
-            this.label115.TabIndex = 13;
-            this.label115.Text = "ExtReference";
+            this.txtInvoiceNumber.Location = new System.Drawing.Point(916, 107);
+            this.txtInvoiceNumber.Name = "txtInvoiceNumber";
+            this.txtInvoiceNumber.Size = new System.Drawing.Size(126, 20);
+            this.txtInvoiceNumber.TabIndex = 162;
             // 
-            // txtROLExtReference
+            // label121
             // 
-            this.txtROLExtReference.Location = new System.Drawing.Point(131, 187);
-            this.txtROLExtReference.Name = "txtROLExtReference";
-            this.txtROLExtReference.Size = new System.Drawing.Size(126, 20);
-            this.txtROLExtReference.TabIndex = 24;
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(804, 110);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(79, 13);
+            this.label121.TabIndex = 13;
+            this.label121.Text = "InvoiceNumber";
             // 
-            // label116
+            // label122
             // 
-            this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(19, 216);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(97, 13);
-            this.label116.TabIndex = 13;
-            this.label116.Text = "CustomsReference";
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(804, 134);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(63, 13);
+            this.label122.TabIndex = 13;
+            this.label122.Text = "PrintInvoice";
             // 
-            // txtROLCustomsReference
+            // label123
             // 
-            this.txtROLCustomsReference.Location = new System.Drawing.Point(131, 213);
-            this.txtROLCustomsReference.Name = "txtROLCustomsReference";
-            this.txtROLCustomsReference.Size = new System.Drawing.Size(126, 20);
-            this.txtROLCustomsReference.TabIndex = 24;
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(804, 161);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(65, 13);
+            this.label123.TabIndex = 13;
+            this.label123.Text = "InvoiceDate";
             // 
-            // label117
+            // txtCurrencyShortName
             // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(19, 242);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(92, 13);
-            this.label117.TabIndex = 13;
-            this.label117.Text = "ReturnDescription";
+            this.txtCurrencyShortName.Location = new System.Drawing.Point(916, 183);
+            this.txtCurrencyShortName.Name = "txtCurrencyShortName";
+            this.txtCurrencyShortName.Size = new System.Drawing.Size(126, 20);
+            this.txtCurrencyShortName.TabIndex = 165;
             // 
-            // txtROLReturnDescription
+            // label124
             // 
-            this.txtROLReturnDescription.Location = new System.Drawing.Point(131, 239);
-            this.txtROLReturnDescription.Name = "txtROLReturnDescription";
-            this.txtROLReturnDescription.Size = new System.Drawing.Size(126, 20);
-            this.txtROLReturnDescription.TabIndex = 24;
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(804, 186);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(102, 13);
+            this.label124.TabIndex = 13;
+            this.label124.Text = "CurrencyShortName";
+            // 
+            // txtFreightCosts
+            // 
+            this.txtFreightCosts.Location = new System.Drawing.Point(916, 209);
+            this.txtFreightCosts.Name = "txtFreightCosts";
+            this.txtFreightCosts.Size = new System.Drawing.Size(126, 20);
+            this.txtFreightCosts.TabIndex = 166;
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(804, 212);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(65, 13);
+            this.label125.TabIndex = 13;
+            this.label125.Text = "FreightCosts";
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(804, 238);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(54, 13);
+            this.label126.TabIndex = 13;
+            this.label126.Text = "Insurance";
+            // 
+            // chkPrintInvoice
+            // 
+            this.chkPrintInvoice.AutoSize = true;
+            this.chkPrintInvoice.Location = new System.Drawing.Point(916, 137);
+            this.chkPrintInvoice.Name = "chkPrintInvoice";
+            this.chkPrintInvoice.Size = new System.Drawing.Size(15, 14);
+            this.chkPrintInvoice.TabIndex = 163;
+            this.chkPrintInvoice.UseVisualStyleBackColor = true;
+            // 
+            // dateTimeInvoiceDate
+            // 
+            this.dateTimeInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeInvoiceDate.Location = new System.Drawing.Point(916, 158);
+            this.dateTimeInvoiceDate.Name = "dateTimeInvoiceDate";
+            this.dateTimeInvoiceDate.Size = new System.Drawing.Size(126, 20);
+            this.dateTimeInvoiceDate.TabIndex = 164;
+            // 
+            // chkInsurance
+            // 
+            this.chkInsurance.AutoSize = true;
+            this.chkInsurance.Location = new System.Drawing.Point(916, 238);
+            this.chkInsurance.Name = "chkInsurance";
+            this.chkInsurance.Size = new System.Drawing.Size(15, 14);
+            this.chkInsurance.TabIndex = 167;
+            this.chkInsurance.UseVisualStyleBackColor = true;
+            // 
+            // txtMiscCharges
+            // 
+            this.txtMiscCharges.Location = new System.Drawing.Point(916, 261);
+            this.txtMiscCharges.Name = "txtMiscCharges";
+            this.txtMiscCharges.Size = new System.Drawing.Size(126, 20);
+            this.txtMiscCharges.TabIndex = 168;
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(804, 264);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(68, 13);
+            this.label127.TabIndex = 13;
+            this.label127.Text = "MiscCharges";
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Location = new System.Drawing.Point(916, 286);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(126, 20);
+            this.txtDiscount.TabIndex = 169;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(804, 289);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(49, 13);
+            this.label128.TabIndex = 13;
+            this.label128.Text = "Discount";
+            // 
+            // txtOther_Fee
+            // 
+            this.txtOther_Fee.Location = new System.Drawing.Point(916, 308);
+            this.txtOther_Fee.Name = "txtOther_Fee";
+            this.txtOther_Fee.Size = new System.Drawing.Size(126, 20);
+            this.txtOther_Fee.TabIndex = 170;
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(804, 311);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(57, 13);
+            this.label129.TabIndex = 13;
+            this.label129.Text = "Other_Fee";
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(884, 14);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(84, 13);
+            this.label130.TabIndex = 13;
+            this.label130.Text = "Customs invoice";
             // 
             // APIform
             // 
@@ -2638,7 +2863,9 @@
             this.Controls.Add(this.label71);
             this.Controls.Add(this.txtTransactions);
             this.Controls.Add(this.btnGetJSONTransactions);
+            this.Controls.Add(this.label118);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtURL);
             this.Controls.Add(this.textAPIKey);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.lblAPIReturnCode);
@@ -2660,10 +2887,10 @@
             this.panel3.PerformLayout();
             this.tabPurchaseOrder.ResumeLayout(false);
             this.tabPurchaseOrder.PerformLayout();
-            this.tabReturnOrder.ResumeLayout(false);
-            this.tabReturnOrder.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.tabReturnOrder.ResumeLayout(false);
+            this.tabReturnOrder.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.ResumeLayout(false);
@@ -2919,6 +3146,31 @@
         private System.Windows.Forms.TextBox txtROOrderType;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.TextBox txtROCustomerNumber;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.TextBox txtURL;
+        private System.Windows.Forms.DateTimePicker dateTimeInvoiceDate;
+        private System.Windows.Forms.CheckBox chkInsurance;
+        private System.Windows.Forms.CheckBox chkPrintInvoice;
+        private System.Windows.Forms.Label label126;
+        private System.Windows.Forms.Label label129;
+        private System.Windows.Forms.Label label128;
+        private System.Windows.Forms.Label label127;
+        private System.Windows.Forms.Label label125;
+        private System.Windows.Forms.Label label124;
+        private System.Windows.Forms.Label label123;
+        private System.Windows.Forms.Label label122;
+        private System.Windows.Forms.Label label121;
+        private System.Windows.Forms.Label label120;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.Label label130;
+        private System.Windows.Forms.TextBox txtOther_Fee;
+        private System.Windows.Forms.TextBox txtDiscount;
+        private System.Windows.Forms.TextBox txtMiscCharges;
+        private System.Windows.Forms.TextBox txtFreightCosts;
+        private System.Windows.Forms.TextBox txtCurrencyShortName;
+        private System.Windows.Forms.TextBox txtInvoiceNumber;
+        private System.Windows.Forms.TextBox txtCustomerVATNumber;
+        private System.Windows.Forms.TextBox txtVATNumber;
     }
 }
 

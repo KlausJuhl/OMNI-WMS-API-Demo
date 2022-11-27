@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -78,7 +79,7 @@ namespace OMNI_WMS_API_Demo
 
                 p.ProductPackings[0].PPT = textPPPPT.Text;
             }
-            int r = APICreateMethods.ProductCreate(p, textAPIKey.Text, out string Errortxt);
+            int r = APICreateMethods.ProductCreate(p, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
 
         }
@@ -156,7 +157,31 @@ namespace OMNI_WMS_API_Demo
                     SOPQTY = 0;
                 s.SalesOrderProduction[0].QTY = SOPQTY;
             }
-            int r = APICreateMethods.SalesOrderCreate(s, textAPIKey.Text, out string Errortxt);
+            // Custom invoice
+            if (txtCustomerVATNumber.Text.Length > 0)
+                s.CustomerVATNumber = txtCustomerVATNumber.Text;
+            if (txtInvoiceNumber.Text.Length > 0)
+                s.InvoiceNumber = txtInvoiceNumber.Text;
+            if (chkPrintInvoice.Checked) 
+                s.PrintInvoice = 1;
+            s.InvoiceDate = dateTimeInvoiceDate.Value;
+            s.CurrencyShortName = txtCurrencyShortName.Text;
+            if (!double.TryParse(txtFreightCosts.Text, out double FreightCosts))
+                FreightCosts = 0;
+            s.FreightCosts = FreightCosts;
+            if (chkInsurance.Checked)
+                s.Insurance = 1;
+            if (!double.TryParse(txtMiscCharges.Text, out double MiscCharges))
+                MiscCharges = 0;
+            s.MiscCharges = MiscCharges;
+            if (!double.TryParse(txtDiscount.Text, out double Discount))
+                Discount = 0;
+            s.Discount = Discount;
+            if (!double.TryParse(txtOther_Fee.Text, out double Other_Fee))
+                Other_Fee = 0;
+            s.Other_Fee = Other_Fee;
+
+            int r = APICreateMethods.SalesOrderCreate(s, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
 
         }
@@ -171,7 +196,7 @@ namespace OMNI_WMS_API_Demo
                 NumTrans = 1;
 
             // Get transactions from WMS
-            int r = GetMethods.GetJSONTransactions(textAPIKey.Text,NumTrans, out d, out string Errortxt);
+            int r = GetMethods.GetJSONTransactions(txtURL.Text, textAPIKey.Text,NumTrans, out d, out string Errortxt);
             // Show error code and message
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
 
@@ -235,7 +260,7 @@ namespace OMNI_WMS_API_Demo
 
         private void btnSalesOrderCancel_Click(object sender, EventArgs e)
         {
-            int r = APICreateMethods.SalesOrderCancelled(textSOOrderNumber.Text, textAPIKey.Text, out string Errortxt);
+            int r = APICreateMethods.SalesOrderCancelled(textSOOrderNumber.Text, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
         }
 
@@ -287,14 +312,14 @@ namespace OMNI_WMS_API_Demo
                     po.PurchaseOrderLine[0].ERPStore = txtPOLERPStore.Text;
 
             }
-            int r = APICreateMethods.PurchaseOrderCreate(po, textAPIKey.Text, out string Errortxt);
+            int r = APICreateMethods.PurchaseOrderCreate(po, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
 
         }
 
         private void btnPurchaseOrderFinished_Click(object sender, EventArgs e)
         {
-            int r = APICreateMethods.PurchaseOrderFinished(txtPONumber.Text, textAPIKey.Text, out string Errortxt);
+            int r = APICreateMethods.PurchaseOrderFinished(txtPONumber.Text, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
         }
 
@@ -329,7 +354,7 @@ namespace OMNI_WMS_API_Demo
                 ro.ReturnOrderLine[0].CustomsReference = txtROLCustomsReference.Text;
                 ro.ReturnOrderLine[0].ReturnDescription = txtROLReturnDescription.Text;
             }
-            int r = APICreateMethods.ReturnOrderCreate(ro, textAPIKey.Text, out string Errortxt);
+            int r = APICreateMethods.ReturnOrderCreate(ro, txtURL.Text, textAPIKey.Text, out string Errortxt);
             lblAPIReturnCode.Text = r.ToString() + " " + Errortxt;
 
         }

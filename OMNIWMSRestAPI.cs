@@ -147,6 +147,20 @@ namespace OMNI_WMS_API_Demo
         public string DropPointCountry { get; set; }
         public SalesOrderLine[] SalesOrderLines { get; set; }
         public SalesOrderProduction[] SalesOrderProduction { get; set; }
+        public string VATNumber { get; set; }
+        public string CustomerVATNumber { get; set; }
+        //Customs invoice
+        public string InvoiceNumber { get; set; }
+        public int PrintInvoice { get; set; }
+        public DateTime InvoiceDate { get; set; }
+        public string CurrencyShortName { get; set; }
+        public double FreightCosts { get; set; }
+        public int Insurance { get; set; }
+        public double MiscCharges { get; set; }
+        public double Discount { get; set; }
+        public double Other_Fee { get; set; }
+
+
 
     }
 
@@ -297,7 +311,7 @@ namespace OMNI_WMS_API_Demo
         public string PartNumber { get; set; }
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string ERPStoreName { get; set; }
         public string PurchaseOrderTypeHostCode { get; set; }
         public string ExtReference { get; set; }
@@ -317,11 +331,11 @@ namespace OMNI_WMS_API_Demo
         public string PartNumber { get; set; }
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
-        public string Width_mm { get; set; }
-        public string Height_mm { get; set; }
-        public string Depth_mm { get; set; }
-        public string Volume_cm3 { get; set; }
-        public string Weight_g { get; set; }
+        public int Width_mm { get; set; }
+        public int Height_mm { get; set; }
+        public int Depth_mm { get; set; }
+        public int Volume_cm3 { get; set; }
+        public int Weight_g { get; set; }
         public Productbarcodes ProductBarcodes { get; set; }
     }
 
@@ -347,7 +361,7 @@ namespace OMNI_WMS_API_Demo
         public string PartNumber { get; set; }
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string TypeCode { get; set; }
         public string ERPStoreName { get; set; }
         public string Batch { get; set; }
@@ -366,7 +380,7 @@ namespace OMNI_WMS_API_Demo
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
         public string Barcode { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string ERPStoreName { get; set; }
         public string ReasonCode { get; set; }
         public string ReasonDescription { get; set; }
@@ -395,7 +409,7 @@ namespace OMNI_WMS_API_Demo
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
         public string TrackAndTraceBarcode { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string TypeCode { get; set; }
         public string ERPStoreName { get; set; }
         public string Batch { get; set; }
@@ -423,7 +437,7 @@ namespace OMNI_WMS_API_Demo
         public string PartNumber { get; set; }
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string ERPStoreName { get; set; }
         public string ReasonCode { get; set; }
         public string ReasonDescription { get; set; }
@@ -449,7 +463,7 @@ namespace OMNI_WMS_API_Demo
         public string PartNumber { get; set; }
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string TypeCode { get; set; }
         public string ERPStoreName { get; set; }
         public string Batch { get; set; }
@@ -471,28 +485,22 @@ namespace OMNI_WMS_API_Demo
         public string Variant1 { get; set; }
         public string Variant2 { get; set; }
         public string Barcode { get; set; }
-        public string Qty { get; set; }
+        public int Qty { get; set; }
         public string FromERPStoreName { get; set; }
         public string ToERPStoreName { get; set; }
         public string Batch { get; set; }
     }
 
-
-
-    public class APIConst
-    {
-        public const string APIURL = "http://wmsapi.wms.tecsys.dk";
-    }
-
+    
     public class APICreateMethods
     {
-        public static int ProductCreate(Product p, string APIKey, out string ErrorText)
+        public static int ProductCreate(Product p, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -539,13 +547,13 @@ namespace OMNI_WMS_API_Demo
                 return 99;
             }
         }
-        public static int SalesOrderCreate(SalesOrder s, string APIKey, out string ErrorText)
+        public static int SalesOrderCreate(SalesOrder s, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -592,13 +600,13 @@ namespace OMNI_WMS_API_Demo
                 return 99;
             }
         }
-        public static int SalesOrderCancelled(string SalesOrderNumber, string APIKey, out string ErrorText)
+        public static int SalesOrderCancelled(string SalesOrderNumber, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -645,13 +653,13 @@ namespace OMNI_WMS_API_Demo
                 return 99;
             }
         }
-        public static int PurchaseOrderCreate(PurchaseOrder p, string APIKey, out string ErrorText)
+        public static int PurchaseOrderCreate(PurchaseOrder p, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -698,13 +706,13 @@ namespace OMNI_WMS_API_Demo
                 return 99;
             }
         }
-        public static int PurchaseOrderFinished(string PONumber, string APIKey, out string ErrorText)
+        public static int PurchaseOrderFinished(string PONumber, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -751,13 +759,13 @@ namespace OMNI_WMS_API_Demo
                 return 99;
             }
         }
-        public static int ReturnOrderCreate(ReturnOrder ro, string APIKey, out string ErrorText)
+        public static int ReturnOrderCreate(ReturnOrder ro, string APIURL, string APIKey, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient(APIConst.APIURL)
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             // Serialize with default class property names - to avoid camelCase 
@@ -809,13 +817,13 @@ namespace OMNI_WMS_API_Demo
 
     public class GetMethods
     {
-        public static int GetJSONTransactions(string APIKey, int NumberOfTransactions, out WMSdata[] Data, out string ErrorText)
+        public static int GetJSONTransactions(string APIURL,string APIKey, int NumberOfTransactions, out WMSdata[] Data, out string ErrorText)
         {
             int ErrorCode = 0;
             ErrorText = "";
             RestRequest request;
 
-            var client = new RestClient("http://wmsapi.wms.tecsys.dk")
+            var client = new RestClient(APIURL)
             .AddDefaultHeader("Content-Type", "application/json");
 
             try
